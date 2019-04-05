@@ -77,6 +77,12 @@ public class Util extends HttpServlet {
 				response.sendRedirect(request.getContextPath()+redirect);
 			}
 		}
+		case "detail":{
+			
+			redirect="/detail.jsp";
+			request.getSession().setAttribute("stats", stats);
+			response.sendRedirect(request.getContextPath()+redirect);
+		}break;
 		}
 	}
 

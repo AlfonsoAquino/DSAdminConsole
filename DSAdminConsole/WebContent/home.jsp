@@ -2,8 +2,9 @@
 	pageEncoding="ISO-8859-1"%>
 <%
 	User account = (User) session.getAttribute("account");
-	Collection<?> stats = (Collection<?>) session.getAttribute("stats");
+	ArrayList<?> stats = (ArrayList<?>) session.getAttribute("stats");
 	String message = (String) request.getAttribute("invalid");
+	ArrayList<String> details = (ArrayList<String>) session.getAttribute("details");
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -104,7 +105,7 @@
 					<td><%=p.getDomanda6()%></td>
 					<td><%=p.getDomanda7()%></td>
 					<td><%=p.getDomanda8()%></td>
-					<td><a href="#"><i class="fas fa-search-plus"></i></a></td>
+					<td><a href="Util?action=detail" ><i class="fas fa-search-plus"></i></a></td>
 				</tr>
 				<%
 					i++;
@@ -113,9 +114,11 @@
 				%>
 			</tbody>
 		</table>
-
+		
 	</div>
 	<a href="Util?action=clear"><input type="reset" value="reset" /></a>
-	<a href="Util?action=download"><input type="button" class="input1" value="download" /></a>
+	<a href="Util?action=download"><input type="button" class="input1"
+		value="download" /></a>
+		
 </body>
 </html>

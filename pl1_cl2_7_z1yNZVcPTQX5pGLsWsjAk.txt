@@ -1,0 +1,85 @@
+
+
+livello:1 
+error: 
+frase: devi dare il riso e il pane
+
+livello:1 
+error: 
+frase: io lavo i cubi neri
+
+livello:1 
+error: 
+frase: il lupo vede il gufo
+
+livello:1 
+error: 
+frase: tara fa il sugo buono
+
+livello:1 
+error: 
+frase: lara beve e sara ride
+
+livello:1 
+error: 
+frase: la rana vive sul lago
+
+livello:1 
+error: 
+frase: il dado è rosa
+
+livello:1 
+error: 
+frase: il pane è un dono
+
+livello:1 
+error: 
+frase: il pane è di sara
+
+livello:1 
+error: 
+frase: la mia mano è rosa
+
+livello:1 
+error: 
+frase: il geco vive sul muro
+
+livello:1 
+error: 
+frase: il mago sale e la fata vola
+
+livello:1 
+error: 
+frase: il gufo è sul ramo
+
+livello:1 
+error: 
+frase: le pere sono cadute
+
+livello:1 
+error: 
+frase: la tua moto fa fumo
+
+livello:1 
+error: 
+frase: cora tira la vela nera
+
+livello:1 
+error: 
+frase: la mela e la pera sono vere
+
+livello:1 
+error: 
+frase: la nave è del re
+
+livello:1 
+error: 
+frase: mara vede la luna
+
+livello:1 
+error: 
+frase: la lana blu e rosa
+
+livello:1 
+error: 
+frase: il topo nero con la coda rosa

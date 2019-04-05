@@ -31,6 +31,7 @@ public class StudModel {
 	
 	public synchronized ArrayList<Statistica> getStudStat(String codiceClasse, String codiceStud) {
 		
+		Utility ut = new Utility();
 		ArrayList<Statistica> stats=new ArrayList<Statistica>();
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
@@ -48,7 +49,7 @@ public class StudModel {
 					result.getString("data"), result.getString("genere"), result.getString("eta"), result.getString("numCorr"), result.getString("numErr"), result.getString("numSaltate"), result.getString("livelloRaggiunto"),
 					result.getString("tempo"), result.getString("errLiv1"), result.getString("errLiv2"), result.getString("errLiv3"), result.getString("errLiv4"), result.getString("domanda1"), 
 					result.getString("domanda2"), result.getString("domanda3"), result.getString("domanda4"), result.getString("domanda5"), result.getString("domanda6"), result.getString("domanda7"),
-					result.getString("domanda8"), result.getString("errorFileName"));
+					result.getString("domanda8"), result.getString("errorFileName"),ut.getDetail(result.getString("errorFileName")));
 			System.out.println(stat.toString());
 			stats.add(stat);
 			temp++;

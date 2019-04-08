@@ -14,9 +14,9 @@ public class Utility {
 			      new File("C:\\Users\\alfon\\OneDrive\\Desktop\\Tesi\\GitDsa\\"+fileName); 
 			    Scanner sc = new Scanner(file); 
 			  
-			    while (sc.hasNextLine()) 
-			      content+=sc.nextLine(); 
-		
+			    while (sc.hasNextLine()) {
+			      content+=sc.nextLine();
+			    }
 		return content;
 		
 	}

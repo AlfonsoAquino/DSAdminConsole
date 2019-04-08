@@ -28,7 +28,7 @@
 	<%@ include file="/navbar.jsp"%>
 
 	<div class="table-responsive body-table">
-		<table class="table">
+		<table class="table table-text">
 			<caption>
 				<h3>Risultati ricerca</h3>
 			</caption>
@@ -52,14 +52,14 @@
 					<th scope="col">Err. liv. 2</th>
 					<th scope="col">Err. liv. 3</th>
 					<th scope="col">Err. liv. 4</th>
-					<th scope="col">Domanda 1</th>
-					<th scope="col">Domanda 2</th>
-					<th scope="col">Domanda 3</th>
-					<th scope="col">Domanda 4</th>
-					<th scope="col">Domanda 5</th>
-					<th scope="col">Domanda 6</th>
-					<th scope="col">Domanda 7</th>
-					<th scope="col">Domanda 8</th>
+					<th scope="col">Feedback 1</th>
+					<th scope="col">Feedback2</th>
+					<th scope="col">Feedback 3</th>
+					<th scope="col">Feedback 4</th>
+					<th scope="col">Feedback 5</th>
+					<th scope="col">Feedback 6</th>
+					<th scope="col">Feedback 7</th>
+					<th scope="col">Feedback 8</th>
 					<th scope="col">Dettaglio test</th>
 				</tr>
 			</thead>
@@ -105,7 +105,9 @@
 					<td><%=p.getDomanda6()%></td>
 					<td><%=p.getDomanda7()%></td>
 					<td><%=p.getDomanda8()%></td>
-					<td><a href="Util?action=detail" ><i class="fas fa-search-plus"></i></a></td>
+					<td><a name="<%=p.getFileName()%>"
+						href="Util?action=detail&detail=<%=p.getFileName()%>" id="det"><i
+							class="fas fa-search-plus"></i></a></td>
 				</tr>
 				<%
 					i++;
@@ -114,11 +116,12 @@
 				%>
 			</tbody>
 		</table>
-		
+
 	</div>
-	<a href="Util?action=clear"><input type="reset" value="reset" /></a>
-	<a href="Util?action=download"><input type="button" class="input1"
-		value="download" /></a>
-		
+	<div class="bottom">
+		<a href="Util?action=clear"><input type="reset" value="reset" /></a>
+		<a href="Util?action=download"><input type="button" class="input1"
+			value="download" /></a>
+	</div>
 </body>
 </html>

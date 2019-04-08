@@ -1,6 +1,9 @@
 package logic;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.Serializable;
+import java.util.Scanner;
 
 public class Statistica implements Serializable{
 	 private String regione, codicePlesso, codiceClasse, codiceRegistro, tipoTest, data, genere, eta, numCorrette, numSbagliate, numSaltate, livelloRaggiunto;
@@ -43,40 +46,6 @@ public class Statistica implements Serializable{
 			this.fileName = fileName;
 		}
 
-		public Statistica(String regione, String codicePlesso, String codiceClasse, String codiceRegistro,
-				String tipoTest, String data, String genere, String eta, String numCorrette, String numSbagliate,
-				String numSaltate, String livelloRaggiunto, String tempoImpiegato, String errore1, String errore2,
-				String errore3, String errore4, String domanda1, String domanda2, String domanda3, String domanda4,
-				String domanda5, String domanda6, String domanda7, String domanda8, String fileName, String fileCont) {
-			super();
-			this.regione = regione;
-			this.codicePlesso = codicePlesso;
-			this.codiceClasse = codiceClasse;
-			this.codiceRegistro = codiceRegistro;
-			this.tipoTest = tipoTest;
-			this.data = data;
-			this.genere = genere;
-			this.eta = eta;
-			this.numCorrette = numCorrette;
-			this.numSbagliate = numSbagliate;
-			this.numSaltate = numSaltate;
-			this.livelloRaggiunto = livelloRaggiunto;
-			this.tempoImpiegato = tempoImpiegato;
-			this.errore1 = errore1;
-			this.errore2 = errore2;
-			this.errore3 = errore3;
-			this.errore4 = errore4;
-			this.domanda1 = domanda1;
-			this.domanda2 = domanda2;
-			this.domanda3 = domanda3;
-			this.domanda4 = domanda4;
-			this.domanda5 = domanda5;
-			this.domanda6 = domanda6;
-			this.domanda7 = domanda7;
-			this.domanda8 = domanda8;
-			this.fileName = fileName;
-			this.fileContent = fileCont;
-		}
 		public String getRegione() {
 			return regione;
 		}
@@ -233,11 +202,18 @@ public class Statistica implements Serializable{
 		public void setFileName(String fileName) {
 			this.fileName = fileName;
 		}
-		public String getFileContent() {
-			return fileContent;
-		}
-		public void setFileContent(String fileContent) {
-			this.fileContent = fileContent;
+		public String getFileContent(String filen) throws FileNotFoundException {
+			String content="";
+			File file = 
+				      new File("C:\\Users\\alfon\\OneDrive\\Desktop\\Tesi\\GitDsa\\"+filen); 
+				    Scanner sc = new Scanner(file); 
+				  
+				    while (sc.hasNextLine()) {
+				    	content+=sc.nextLine();
+				    }
+				       
+			
+			return content;
 		}
 		@Override
 		public String toString() {
@@ -249,7 +225,7 @@ public class Statistica implements Serializable{
 					+ ", errore3=" + errore3 + ", errore4=" + errore4 + ", domanda1=" + domanda1 + ", domanda2="
 					+ domanda2 + ", domanda3=" + domanda3 + ", domanda4=" + domanda4 + ", domanda5=" + domanda5
 					+ ", domanda6=" + domanda6 + ", domanda7=" + domanda7 + ", domanda8=" + domanda8 + ", fileName="
-					+ fileName + ", fileContent=" + fileContent + "]";
+					+ fileName + "]";
 		}
 		
 		 

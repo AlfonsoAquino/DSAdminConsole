@@ -1,14 +1,25 @@
 @charset "ISO-8859-1";
 
 html {
-	background-color: #56baed;
+	background-color: #ffffff;
 }
-
+.bottom{
+	position:absolute;
+	bottom:0;	
+}
+.error{
+	
+}
+.correct{
+	
+}
 body {
 	font-family: "Poppins", sans-serif;
 	height: 100vh;
+	font-size: 1.6em;
 }
-
+.table-text{
+}
 a {
 	color: #92badd;
 	display: inline-block;

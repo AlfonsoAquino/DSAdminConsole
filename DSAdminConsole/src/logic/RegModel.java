@@ -32,7 +32,7 @@ public class RegModel {
 
 	private static final String TABLE_NAME = "user";
 	
-	public synchronized int login(String nome, String cognome, String email, String password) throws SQLException {
+	public synchronized int registrazione(String nome, String cognome, String email, String password) throws SQLException {
 		
 		User user=new User();
 		Connection connection = null;

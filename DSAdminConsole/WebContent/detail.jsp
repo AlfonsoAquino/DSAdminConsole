@@ -29,7 +29,7 @@
 
 	<div class="container">
 		<%
-			File file = new File("C:\\Users\\alfon\\OneDrive\\Desktop\\Tesi\\GitDsa\\" + details);
+			File file = new File("D:\\uploads\\" + details);
 			if (file.exists()) {
 				Scanner sc = new Scanner(file, "UTF-8");
 

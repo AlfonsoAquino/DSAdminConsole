@@ -118,7 +118,7 @@
 		</table>
 
 	</div>
-	<div class="bottom">
+	<div class="">
 		<a href="Util?action=clear"><input type="reset" value="reset" /></a>
 		<a href="Util?action=download"><input type="button" class="input1"
 			value="download" /></a>

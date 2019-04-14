@@ -36,7 +36,7 @@
 
 			<!-- Login Form -->
 			<form action="LoginServ" method="post">
-				<input type="text" id="login" class="input second" name="loginEmail"
+				<input type="email" id="login" class="input second" name="loginEmail"
 					placeholder="Email" required> <input type="password"
 					id="password" class="input third" name="loginPass"
 					placeholder="Password" required>

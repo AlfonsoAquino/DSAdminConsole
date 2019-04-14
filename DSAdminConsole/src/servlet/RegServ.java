@@ -50,7 +50,7 @@ public class RegServ extends HttpServlet {
         if(user == null) {
         	
         	try {
-				int check= reg.login(nome, cognome, email, password);
+				int check= reg.registrazione(nome, cognome, email, password);
 				
 				if(check>0) {
 					response.sendRedirect(request.getContextPath()+redirect);

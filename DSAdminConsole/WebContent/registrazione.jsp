@@ -37,7 +37,7 @@
 				<input type="text" id="nome" class="input second" name="nome"
 					placeholder="Nome" required> <input type="text"
 					id="cognome" class="input third" name="cognome"
-					placeholder="Cognome" required> <input type="text"
+					placeholder="Cognome" required> <input type="email"
 					id="login" class="input second" name="email" placeholder="Email"
 					required> <input type="password" id="password"
 					class="input third" name="pass" placeholder="Password" required>

@@ -31,7 +31,6 @@ public class StudModel {
 	
 	public synchronized ArrayList<Statistica> getStudStat(String codiceClasse, String codiceStud) {
 		
-		Utility ut = new Utility();
 		ArrayList<Statistica> stats=new ArrayList<Statistica>();
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
